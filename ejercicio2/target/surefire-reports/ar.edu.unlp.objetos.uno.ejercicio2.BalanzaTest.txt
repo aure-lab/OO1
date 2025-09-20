@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ar.edu.unlp.objetos.uno.ejercicio2.BalanzaTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.056 s <<< FAILURE! - in ar.edu.unlp.objetos.uno.ejercicio2.BalanzaTest
+testEmitirTicket  Time elapsed: 0.018 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <4.83> but was: <27.83>
+	at ar.edu.unlp.objetos.uno.ejercicio2.BalanzaTest.testEmitirTicket(BalanzaTest.java:56)
+
