@@ -20,5 +20,9 @@ public class CuentaCorriente extends Cuenta{
 		this.decubierto = decubierto;
 	}
 	
+	public double aplicarInteres (double monto) {
+		return 0;
+	}
+	
 	
 }

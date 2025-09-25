@@ -21,12 +21,14 @@ public abstract class Cuenta {
 	
 	public boolean extraer (double monto) {
 		if(this.puedeExtraer(monto)) {
-			this.extraerSinControlar(monto);
+			this.extraerSinControlar(monto + this.aplicarInteres(monto));
 			return true;
 		}
 		return false;
 	}
 	
 	protected abstract boolean puedeExtraer (double monto);
+	
+	protected abstract double aplicarInteres (double monto);
 
 }
