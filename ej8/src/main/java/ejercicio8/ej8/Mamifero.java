@@ -82,6 +82,13 @@ public class Mamifero {
 	}
 	
 	public boolean tieneComoAncestroA (Mamifero unMamifero) {
+		System.out.println("+1000 de aura");
+		return ((this.tienePadre()&&(this.getPadre() == unMamifero || this.getPadre().tieneComoAncestroA(unMamifero) ))
+				|| (this.tieneMadre() && (this.getMadre()==unMamifero || this.getMadre().tieneComoAncestroA(unMamifero) )));
+	}
+	
+	/*RESOLUCION NO OBJETOSA
+	 * public boolean tieneComoAncestroA (Mamifero unMamifero) {
 		Mamifero map = this.getPadre();
 		Mamifero mam = this.getMadre();
 		Boolean ok = false;
@@ -100,4 +107,5 @@ public class Mamifero {
 		}
 		return ok;
 	}
+	*/
 }
